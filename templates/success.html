@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="static/css/login.css">
+{% endblock %}
+
+{% block content %}
+{% if messages %}
+<div class="messages">{{ messages }}</div>
+{% endif %}
+<div class="container">
+  <h1>success</h1>
+</div> 
+{% endblock %}

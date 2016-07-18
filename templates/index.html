@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="static/css/login.css">
+{% endblock %}
+
+{% block content %}
+{% if messages %}
+<div class="messages">{{ messages }}</div>
+{% endif %}
+<div class="container">
+  <form method="post" class="form-signin">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <label for="inputUid" class="sr-only">User ID</label>
+    <input id="inputUid" name="username" class="form-control" placeholder="User ID" required="" autofocus="">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input id="inputPassword" name="password" class="form-control" placeholder="Password" required="" type="password">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  </form>  
+</div> 
+{% endblock %}
